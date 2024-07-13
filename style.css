@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b8b4b1;
+    margin: 200px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 20vh;
+}
+
+/* Container for the form and table */
+.container {
+    background-color: #b8b8b8;
+    padding: 20px;
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 10px;
+    width: calc(50% - 20px);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"], input[type="submit"], button {
+    width: calc(50% - 20px);
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 5px solid #8b8787;
+    font-size: 16px;
+}
+
+input[type="submit"], button {
+    background-color: #030303;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #610202;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #811d1d;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #610202;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Button Styles for Update and Delete */
+form[style='display:inline-block;'] input[type='submit'] {
+    width: auto;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f44336;
+}
+
+form[style='display:inline-block;'] input[type='submit']:hover {
+    background-color: #e53935;
+}
+
+form[style='display:inline-block;']:last-child input[type='submit'] {
+    background-color: #000000;
+}
+
+form[style='display:inline-block;']:last-child input[type='submit']:hover {
+    background-color: #7d1818;
+}
